@@ -26,23 +26,18 @@ var t2 = new keytree({
   msg: 'common message'
 })
 
-t1.derive()
-  .toString('hex') // 1c56352098780de84006b38e6...
-
-t2.derive
-  .toString('hex') // 1c56352098780de84006b38e6...
+t1.derive().toString('hex') // 1c56352098780de84006b38e6...
+t2.derive().toString('hex') // 1c56352098780de84006b38e6...
 
 t1.child()
   .child()
   .branch()
   .child()
-  .derive()
-  .toString('hex') // 1e5a900bd21d820ad3d49...
+  .derive().toString('hex') // 1e5a900bd21d820ad3d49...
 
 t2.child()
   .child()
   .branch()
   .child()
-  .derive()
-  .toString('hex') // 1e5a900bd21d820ad3d49...
+  .derive().toString('hex') // 1e5a900bd21d820ad3d49...
 ```
