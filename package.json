@@ -1,0 +1,35 @@
+{
+  "name": "keytree",
+  "version": "0.0.1",
+  "description": "Deterministicaly derive shared keys between two parties after initial ECDF",
+  "main": "index.js",
+  "author": "tlr",
+  "scripts": {
+    "start": "nodemon index.js",
+    "test": "mocha",
+    "build": "browserify index.js --s keytree > dist/keytree.js && uglifyjs dist/keytree.js > dist/keytree.min.js"
+  },
+  "keywords": [
+    "bitcoin",
+    "blockchain",
+    "cryptocurrency",
+    "cryptography",
+    "elliptic-curve",
+    "encryption",
+    "ecdh"
+  ],
+  "license": "MIT",
+  "unpkg": "dist/keytree.min.js",
+  "dependencies": {
+    "elliptic": "^6.5.2",
+    "sha256": "^0.2.0"
+  },
+  "devDependencies": {
+    "mocha": "^6.2.2",
+    "uglify-es": "^3.3.9"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tiagolr/keytree.git"
+  }
+}
