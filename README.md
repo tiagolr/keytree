@@ -12,7 +12,7 @@ npm install keytree
 ## Example
 
 ```javascript
-const keytree = require('keytree')
+const keytree = require('sharedkeytree')
 
 var t1 = new keytree({
   priv: serverPrivate, // hex format

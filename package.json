@@ -1,6 +1,6 @@
 {
-  "name": "keytree",
-  "version": "0.0.1",
+  "name": "sharedkeytree",
+  "version": "1.0.0",
   "description": "Deterministicaly derive shared keys between two parties after initial ECDF",
   "main": "index.js",
   "author": "tlr",
